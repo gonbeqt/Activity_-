@@ -2,16 +2,13 @@ package com.example.myapplication
 
 import android.os.Bundle
 import android.widget.ListView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var adapteroflist: ArrayList<dataitems>
+    private lateinit var adapteroflist: ArrayList<CountryInfo>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,18 +16,33 @@ class MainActivity : AppCompatActivity() {
         // Inflate the layout using ViewBinding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        // Your list of countries
-        val country = listOf(
-            "Philippines", "Canada", "United States", "Sweden", "Germany", "Italy",
-            "Australia", "Finland", "Denmark", "Netherlands", "Spain", "Belgium",
-            "Ireland", "Japan", "China", "South Korea", "India", "Brazil", "Russia", "Thailand"
+
+        // Your list of countries, capital and flags
+        val countriesWithFlags = listOf(
+            CountryInfo("Afghanistan", "Kabul", R.drawable.afghanistan),
+            CountryInfo("Albania", "Tirana", R.drawable.albania),
+            CountryInfo("Algeria", "Algiers", R.drawable.algeria),
+            CountryInfo("Benin", "Porto-Novo", R.drawable.benin),
+            CountryInfo("Bhutan", "Thimphu", R.drawable.bhutan),
+            CountryInfo("Bolivia", "Sucre", R.drawable.bolivia),
+            CountryInfo("Botswana", "Gaborone", R.drawable.botswana),
+            CountryInfo("Brunei", "Bandar Seri Begawan", R.drawable.brunei),
+            CountryInfo("Canada", "Ottawa", R.drawable.canada),
+            CountryInfo("China", "Beijing", R.drawable.china),
+            CountryInfo("Denmark", "Copenhagen", R.drawable.denmark),
+            CountryInfo("Ecuador", "Quito", R.drawable.ecuador),
+            CountryInfo("France", "Paris", R.drawable.france),
+            CountryInfo("Indonesia", "Jakarta", R.drawable.indonesia),
+            CountryInfo("Malaysia", "Kuala Lumpur", R.drawable.malaysia),
+            CountryInfo("Nigeria", "Abuja", R.drawable.nigeria),
+            CountryInfo("Philippines", "Manila", R.drawable.philippines),
+            CountryInfo("Sudan", "Khartoum", R.drawable.sudan),
+            CountryInfo("Syria", "Damascus", R.drawable.syria),
+            CountryInfo("Yemen", "Sana'a", R.drawable.yemen)
         )
 
         // Initialize the adapter's data
-        adapteroflist = ArrayList()
-        for (i in country.indices) {
-            adapteroflist.add(dataitems(country[i]))
-        }
+        adapteroflist = ArrayList(countriesWithFlags)
 
         // Access the ListView directly using binding
         val listView: ListView = binding.listView  // Access ListView via binding

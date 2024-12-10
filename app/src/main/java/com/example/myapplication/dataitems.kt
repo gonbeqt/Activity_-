@@ -1,5 +1,8 @@
 package com.example.myapplication
 
-class dataitems (
-    var country: String
+data class CountryInfo (
+    var country: String,
+    var capital: String,
+    var flagId: Int
 )
+
