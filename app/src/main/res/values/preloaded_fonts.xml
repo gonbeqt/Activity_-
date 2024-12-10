@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/playfair</item>
+        <item>@font/playfair_bold</item>
+        <item>@font/playfair_semibold</item>
+    </array>
+</resources>
