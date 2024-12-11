@@ -34,16 +34,15 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:autoSizeMaxTextSize="35sp"
-        android:autoSizeMinTextSize="33sp"
+        android:autoSizeMaxTextSize="41sp"
+        android:autoSizeMinTextSize="37sp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/playfair_bold"
         android:text="Discover amazing countries around the world!"
         android:textColor="@color/white"
-        android:textSize="33sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/guideline12"
         app:layout_constraintVertical_bias="0.0" />
@@ -143,21 +142,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.54" />
+        app:layout_constraintGuide_percent="0.61" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.82" />
+        app:layout_constraintGuide_percent="0.79" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.73" />
+        app:layout_constraintGuide_percent="0.79" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline15"
