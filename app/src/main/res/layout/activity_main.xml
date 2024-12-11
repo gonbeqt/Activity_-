@@ -25,7 +25,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:divider="@color/beige"
-
         android:dividerHeight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline16"
@@ -55,13 +54,14 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:fontFamily="@font/playfair"
+            android:layout_gravity="bottom|start"
+            android:fontFamily="@font/sourcesans_regular"
+            android:paddingLeft="20dp"
             android:paddingBottom="20dp"
             android:text="Here's 20 Amazing Countries Waiting For You!"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textColor="@color/white"
-            android:textSize="25dp" />
+            android:textSize="24dp" />
 
     </FrameLayout>
 
