@@ -52,7 +52,8 @@ class MainActivity : AppCompatActivity() {
         listView.adapter = adapter  // Set the adapter to the ListView
 
         btnExit.setOnClickListener {
-            finish()
+
+            finishAffinity()
         }
     }
 }
